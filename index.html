@@ -1,0 +1,345 @@
+<style>
+        @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+    * {
+        font-family:'Montserrat';
+    }
+   body{
+        margin: 0 auto;
+   }
+   section.top-page{
+        background: url(background/bg.jpg);
+        background-size: cover;
+        height: 80vh;
+        Padding:25px;
+    }
+    header.header{
+        display:flex;
+        align-items:center;
+        margin-right: 30px;
+    }
+    header.header img{
+        width: 150px;}
+/* menu de navigation */
+       nav.nav{
+        display: flex;
+        justify-content: space-between;
+
+        list-style:none;
+
+        width: 400px;
+        margin-left: 30px;
+       }
+       a{
+        color:white;
+       }
+
+        
+       a:active{
+        background-color: rgb(63, 207, 63);
+       }
+     
+       /* Page de bienvenue */
+
+       landing-page{
+        padding: 5px 5px;
+       }
+       h1.big-title{
+        color:white;
+        font-size:55px;;
+        font-family: 'Abril Fatface',cursive;
+        font-weight: 100;
+        padding:5px 5px;
+       }
+        a.scroll-down{
+        color:white;
+        text-decoration: none;
+        position:absolute;
+        bottom: 110px;
+       }
+       /* service */
+       .service{
+        display:flex;
+        justify-content: space-evenly;
+        margin;50px;
+        padding-top:10px;
+       }
+       .service-item{
+        display:flex;
+        align-items: center;
+        flex-direction:column;
+
+       }
+       .delivery-icon{
+        font-size:50px;
+        color:rgb(85, 212, 85);
+       
+       }
+       .service-details{
+        font-weight: 600;
+        width: 200px;
+        text-align:center;
+       }
+       /* nos meilleures ventes */
+       .section-title{
+                font-size:50px;
+                font-family: 'Abril Fatface',cursive;
+                font-weight: 100;
+                position:relative;
+                
+       }
+
+       .section-title::before {
+            content:"";
+            position:absolute;
+            background-color:rgb(74, 182, 74);
+            width: 60px;
+            height: 7px;
+            bottom: 0;
+
+       }
+       .best-plants{
+        min-width: 500px;
+        display:flex;
+        flex-wrap: wrap;
+       }
+       .plant-box{
+        position:relative;
+        background-size: cover;
+        background-position: center;
+        width:350px;
+
+       
+       }
+       .no-grid{
+        min-width: 220px;
+        height: 500px;
+        flex: 1;
+
+       }
+       .plant1{
+        background-image: url(best_sells/1.jpg);
+       }
+       .plant2{
+        background-image: url(best_sells/2.jpg);
+       }
+       .plant3{
+        background-image: url(best_sells/3.jpg);
+       }
+       .plant4{
+        background-image: url(best_sells/4.jpg);
+       }
+       .plant-detail{
+        position:absolute;
+        width: 100%;
+        bottom:0;
+        background-color: rgba(235, 235, 230, 0.685);
+        padding:5px 20px;
+       }
+       .plant-name{
+        font-size:22px;
+        font-weight: 800;
+        line-height: 3px;
+       }
+       .plant-price{
+        color:rgb(74, 182, 74);
+        font-weight: 800;
+        font-size:14px;
+        line-height: 3px;
+       }
+       /* NOS PLANTES */
+       .all-plant{
+        
+
+       }
+       .plant-grid{
+        display:grid;
+        min-width: 150vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:repeat(4, 400px);
+
+       }
+       .plant-grid1{
+         background-image: url(image/1.jpg);
+         grid-column:1/3;
+         grid-row: 1/3;
+         min-width: 700;
+         
+        
+       }
+       .plant-grid2{
+         background-image: url(image/2.jpg);
+         grid-column: 3/5;
+         min-width: 700;
+         
+
+       }
+       .plant-grid3{
+         background-image: url(image/3.jpg);
+        grid-column: 3/5;
+        min-width: 700;
+        
+       }
+       .plant-grid4{
+         background-image: url(image/4.jpg);
+         grid-column: 1;
+         grid-row: 3/5;
+         min-width: 0;
+         
+       }
+       .plant-grid5{
+         background-image: url(image/5.jpg);
+         grid-column: 2/4;
+         grid-row: 3/5;
+         min-width: 700;
+
+       }
+       .plant-grid6{
+         background-image: url(image/6.jpg);
+         grid-column: 4;
+         grid-row: 3/5;
+
+       }
+       /* PIED DE PAGE */
+       footer{
+      display:flex;
+      justify-content: space-between;
+      margin:20px 100px;
+      font-weight: 800;
+
+       }
+       footer a.cgv{
+        text-decoration: none;
+        color:black;
+       }
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nature Emoi - ventes de plantes en ligne </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</head>
+<body>
+       <section class="top-page">
+        <header class="header">    
+            <img src="logo/logo.png" alt="logo du site">
+            <nav class="nav">
+                <li><a href="acceuil.html">Acceuil</a></li>
+                <li><a href="nos_meilleures_ventes.html">Nos meilleures ventes</a></li>
+                <li><a href="nos_ventes"> Nos ventes</a></li>
+                <div class="enregistrement">
+                <li ><a href="inscription">s'inscrire</a></li>
+                <li ><a href="connexion.html">connexion</a></li>
+                </div>
+                </nav>
+        </header>
+        <div class="landing-page">
+            <h1 class="big-title">Nature Emoi,meilleure que le chocolat.     
+            </h1>
+            <a class="scroll-down" href="#services">Scroll <i class="fas fa-angle-down"></i>
+            </a>        </div>
+    </section> 
+     <section class="service">
+        <div class="service-item">
+           <i class="fas fa-store delivery-icon"></i>
+           <p class="service-details">Nos magasins à votre service</p> 
+        </div>
+        <div class="service-item">
+            <i class="fas fa-people-carry delivery-icon"></i>
+           <p  class="service-details">Retrait en magasin sans contact</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-truck delivery-icon"></i>
+           <p class="service-details" >Livraison à domicile sans contact</p>
+        </div>
+    </section> 
+    <section class="best sells">
+        <h2 class="section-title"> Nos meilleures ventes </h2  >
+            <div class="best-plants">
+                <a class="plant-box plant1 no-grid">
+                    <div class="plant-detail">
+                        <p class="plant-name">Plante</p>
+                        <p class="plant-price">24.99€</p>
+                    </div>
+                </a>
+                <a class="plant-box plant2 no-grid">
+                    <div class="plant-detail">
+                        <p class="plant-name">Plante</p>
+                        <p class="plant-price">14.99€</p>
+                    </div>    
+                </a>
+                <a class="plant-box plant3 no-grid">
+                    <div class="plant-detail">
+                        <p class="plant-name">Plante</p>
+                        <p class="plant-price">24.99€</p>
+                    </div>
+                </a>
+                <a class="plant-box plant4 no-grid">
+                    <div class="plant-detail">
+                        <p class="plant-name">Plante</p>
+                        <p class="plant-price">29.99€</p>
+                    </div>
+                </a>
+            </div>
+    </section>
+     
+    <section class="all-plant">
+        <h2 class="section-title">Nos plantes</h2>
+        <div class="plant-grid">
+            <a class=" plant-grid1 plant-box " >
+                <div class="plant-detail">
+                    <p class="plant-name">Plante</p>
+                    <p class="plant-price">17.99€ </p>
+                    
+                </div>
+
+            </a>
+            <a class=" plant-grid2 plant-box " >
+                <div class="plant-detail">
+                    <p class="plant-name">Plante</p>
+                    <p class="plant-price">9.99€ </p>
+                    
+                </div>
+            </a>
+            <a class=" plant-grid3 plant-box " >
+                <div class="plant-detail">
+                    <p class="plant-name">Plante</p>
+                    <p class="plant-price">44.99€ </p>
+                    
+                </div>
+            </a>
+            <a class=" plant-grid4 plant-box " >
+                <div class="plant-detail">
+                    <p class="plant-name">Plante</p>
+                    <p class="plant-price">39.99€ </p>
+                    
+                </div>
+            </a>
+            <a class=" plant-grid5 plant-box " >
+                   <div class="plant-detail">
+                <p class="plant-name">Plante</p>
+                <p class="plant-price">17.99€ </p>
+                
+            </div>
+        </a>
+            <a class=" plant-grid6 plant-box " > 
+                  <div class="plant-detail">
+                <p class="plant-name">Plante</p>
+                <p class="plant-price">24.99€ </p>
+                
+            </div>
+        </a>
+
+        </div>
+     </section>
+     <footer>
+        <p class="copyright"> &copy; 2022 - Nature Emoi </p>
+        <a href="" class="cgv">condition generale de ventes</a>
+     </footer>
+</body>
+</html> 
